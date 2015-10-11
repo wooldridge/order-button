@@ -1,8 +1,8 @@
 ## Description
 
-A Node.js script that reacts to an Amazon Dash Button. When the button is
-pressed, it displays information in the console and, on Mac OS X, plays a
-random sound.
+A Node.js script that reacts to an Amazon Dash Button. When the Amazon
+Dash Button is button is pressed, the script displays information in the
+console and, on Mac OS X, plays a random sound.
 
 ## References
 
@@ -20,7 +20,7 @@ random sound.
 
    [Shop Dash Buttons](http://www.amazon.com/gp/browse.html?node=10667898011)
 
-2. Install libpcap dependency. On Mac OS X, this worked for me:
+2. Install the libpcap dependency. On Mac OS X, this worked for me:
 
    [How to install Python libpcap module on Mac OS X](http://stackoverflow.com/questions/27149377/how-to-install-python-libpcap-module-on-mac-os-x)
 
@@ -30,7 +30,7 @@ random sound.
    $ git clone https://github.com/wooldridge/order-button
    ```
 
-4. Install npm dependencies:
+4. Install the npm dependencies for order-button:
 
    ```
    $ cd order-button
@@ -39,12 +39,12 @@ random sound.
 
 6. Set up the Amazon Dash Button on your WiFi network. Important: Do not
 complete the entire setup process described by Amazon. You do not want the
-button actually ordering Amazon products. Stop when it asks you to choose
-a product to order with the button:
+button actually ordering Amazon products. Stop when the instructions ask you
+to choose a product to order with the button:
 
    [Set Up Your Dash Button](https://www.amazon.com/gp/help/customer/display.html?nodeId=201746340)
 
-7. Now that the Dash Button is on your WiFi network, get its MAC address with
+7. Now that the Dash Button is on your WiFi network, get its MAC address using
 a script from the node-dash-button module:
 
    ```
@@ -58,7 +58,7 @@ a script from the node-dash-button module:
    74:c2:46:ad:f5:b7
    ```
 
-9. Add the MAC address to your config_sample.js file, and save that file as
+9. Open the config_sample.js file and add the MAC address. Save that file as
 config.js.
 
 10. Run the order-button script:
@@ -68,5 +68,5 @@ config.js.
    $ node index
    ```
 
-   When you press the Amazon Dash Button, your console should display information
-   and, on Mac OS X, play a random sound.
+   When you press the Amazon Dash Button, your console displays information
+   and, on Mac OS X, plays a random sound.
