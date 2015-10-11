@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mac-sounds": "^0.1.1",
     "node-dash-button": "^0.1.1"
   }
 }
