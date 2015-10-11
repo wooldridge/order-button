@@ -1,18 +1,19 @@
 ## Description
 
-A Node.js script that reacts to the press of an Amazon Dash Button. It displays
-information in the console and, on Mac OS X, plays a random sound.
+A Node.js script that reacts to an Amazon Dash Button. When the button is
+pressed, it displays information in the console and, on Mac OS X, plays a
+random sound.
 
 ## Prerequisites
 
-- [Node.js and npm](http://nodejs.org)
-- libpcap
+* [Node.js and npm](http://nodejs.org)
+* libpcap
 
 ## Setup
 
 1. Purchase an Amazon Dash Button:
 
-[Shop Dash Buttons](http://www.amazon.com/gp/browse.html?node=10667898011)
+   [Shop Dash Buttons](http://www.amazon.com/gp/browse.html?node=10667898011)
 
 2. Install libpcap dependency. On Mac OS X, this worked for me:
 
