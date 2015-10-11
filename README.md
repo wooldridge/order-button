@@ -4,6 +4,11 @@ A Node.js script that reacts to an Amazon Dash Button. When the button is
 pressed, it displays information in the console and, on Mac OS X, plays a
 random sound.
 
+## References
+
+* [node-dash-button](https://www.npmjs.com/package/node-dash-button)
+* [How I Hacked Amazon’s $5 WiFi Button to track Baby Data](https://medium.com/@edwardbenson/how-i-hacked-amazon-s-5-wifi-button-to-track-baby-data-794214b0bdd8)
+
 ## Prerequisites
 
 * [Node.js and npm](http://nodejs.org)
@@ -32,19 +37,22 @@ random sound.
    $ npm install
    ```
 
-6. Set up your Amazon Dash Button:
+6. Set up the Amazon Dash Button on your WiFi network. Important: Do not
+complete the entire setup process described by Amazon. You do not want the
+button actually ordering Amazon products. Stop when it asks you to choose
+a product to order with the button:
 
    [Set Up Your Dash Button](https://www.amazon.com/gp/help/customer/display.html?nodeId=201746340)
 
-7. Get MAC address of Amazon Dash Button:
+7. Now that the Dash Button is on your WiFi network, get its MAC address with
+a script from the node-dash-button module:
 
    ```
    $ cd node_modules/node-dash-button
    $ node bin/findbutton
    ```
-
-8. Press your dash button and look for corresponding MAC address in the
-console. MAC addresses look like this:
+   Press your dash button and look for corresponding MAC address in the
+   console. MAC addresses look like this:
 
    ```
    74:c2:46:ad:f5:b7
